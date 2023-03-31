@@ -1,0 +1,8 @@
+**/Debug
+**/.settings
+*.o
+*.d
+*.project
+*.cproject
+*.mxproject
+Prueba_Git.ioc
