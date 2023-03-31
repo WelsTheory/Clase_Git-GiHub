@@ -103,12 +103,12 @@ int main(void)
 		switch(var){
 			case 1:
 				HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
-				HAL_Delay(100);
+				HAL_Delay(150);
 				var++;
 				break;
 			case 2:
 				HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
-				HAL_Delay(100);
+				HAL_Delay(150);
 				var++;
 				break;
 			default:
