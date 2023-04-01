@@ -115,6 +115,7 @@ int main(void)
 				var++;
 				break;
 		}
+		app_main();
 	}
 	/* USER CODE END 3 */
 }
