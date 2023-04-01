@@ -89,7 +89,7 @@ int main(void)
 	MX_GPIO_Init();
 	MX_USART3_UART_Init();
 	/* USER CODE BEGIN 2 */
-
+	char var = 0;
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
@@ -99,7 +99,22 @@ int main(void)
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
-		app_main();
+		//app_main();
+		switch(var){
+			case 1:
+				HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
+				HAL_Delay(100);
+				var++;
+				break;
+			case 2:
+				HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
+				HAL_Delay(100);
+				var++;
+				break;
+			default:
+				var++;
+				break;
+		}
 	}
 	/* USER CODE END 3 */
 }
